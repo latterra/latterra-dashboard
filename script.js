@@ -1,7 +1,7 @@
 const SUPABASE_URL = "https://nnnagxitvlknjrjlzwox.supabase.co";
 
 const SUPABASE_KEY =
-"PASTE_ANON_KEY_DISINI";
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5ubmFneGl0dmxrbmpyamx6d294Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2NDE1NjcsImV4cCI6MjA5NzIxNzU2N30.08dpaNPSOaEGxMLFWeTNbLMgq_eeVLi0UfkSVXHKWyE";
 
 const supabaseClient = supabase.createClient(
   SUPABASE_URL,
