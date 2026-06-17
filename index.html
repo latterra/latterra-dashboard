@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latterra Sales Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Latterra Dashboard</h1>
+  <p class="sub">Monitor penjualan, modal, omzet, dan laba.</p>
+
+  <div class="card">
+    <h2>Input Penjualan</h2>
+    <div class="grid">
+      <input id="menu" placeholder="Nama Menu">
+      <input id="modal" type="number" placeholder="Modal per Cup">
+      <input id="jual" type="number" placeholder="Harga Jual">
+      <input id="qty" type="number" placeholder="Qty">
+    </div>
+    <button onclick="tambah()">Tambah</button>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Omzet</span><strong id="omzet">Rp0</strong></div>
+    <div class="stat"><span>Modal</span><strong id="totalModal">Rp0</strong></div>
+    <div class="stat"><span>Laba</span><strong id="laba">Rp0</strong></div>
+  </div>
+
+  <div class="card">
+    <h2>Data Penjualan</h2>
+    <table>
+      <thead>
+        <tr><th>Menu</th><th>Qty</th><th>Omzet</th><th>Laba</th></tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
